@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Attendance System</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="school-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <h1>
+                    Student Attendance System
+                </h1>
+
+                <p>
+                    School Attendance Management
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    👨‍🎓
+                </div>
+
+                <div>
+
+                    <h3>
+                        Total Students
+                    </h3>
+
+                    <p id="totalStudents">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    ✅
+                </div>
+
+                <div>
+
+                    <h3>
+                        Present Today
+                    </h3>
+
+                    <p id="presentToday">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    ❌
+                </div>
+
+                <div>
+
+                    <h3>
+                        Absent Today
+                    </h3>
+
+                    <p id="absentToday">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <div class="card-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <h3>
+                        Attendance
+                    </h3>
+
+                    <p id="attendancePercentage">
+                        0%
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- CONTROLS -->
+
+        <section class="controls">
+
+
+            <div class="control-group">
+
+                <label for="attendanceDate">
+                    📅 Attendance Date
+                </label>
+
+                <input
+                    type="date"
+                    id="attendanceDate"
+                >
+
+            </div>
+
+
+
+            <div class="control-group">
+
+                <label for="searchStudent">
+                    🔍 Search Student
+                </label>
+
+                <input
+                    type="text"
+                    id="searchStudent"
+                    placeholder="Enter student name..."
+                >
+
+            </div>
+
+
+
+            <button id="addStudentBtn">
+
+                ➕ Add Student
+
+            </button>
+
+
+        </section>
+
+
+
+        <!-- ATTENDANCE TABLE -->
+
+        <section class="attendance-section">
+
+
+            <div class="section-title">
+
+                <h2>
+                    📋 Today's Attendance
+                </h2>
+
+                <span>
+                    Mark each student
+                </span>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Roll No
+                            </th>
+
+                            <th>
+                                Student Name
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Attendance %
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="studentTable">
+
+                        <!-- Students appear here -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- SAVE BUTTON -->
+
+        <div class="save-area">
+
+            <button
+                id="saveAttendanceBtn"
+                class="save-btn"
+            >
+
+                💾 Save Attendance
+
+            </button>
+
+        </div>
+
+
+
+        <!-- REPORT -->
+
+        <section class="reports">
+
+
+            <div class="section-title">
+
+                <h2>
+                    📊 Attendance Report
+                </h2>
+
+                <span>
+                    Overall attendance
+                </span>
+
+            </div>
+
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Roll No
+                            </th>
+
+                            <th>
+                                Student Name
+                            </th>
+
+                            <th>
+                                Present
+                            </th>
+
+                            <th>
+                                Absent
+                            </th>
+
+                            <th>
+                                Attendance %
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="reportTable">
+
+                        <!-- Report appears here -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            🎓 Student Attendance Management System
+        </p>
+
+        <p>
+            Built using HTML • CSS • JavaScript
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
